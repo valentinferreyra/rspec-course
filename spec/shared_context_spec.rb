@@ -13,6 +13,8 @@ end
 RSpec.describe 'first example group' do
   include_context 'common'
 
+  puts subject
+
   it 'can use instance variables' do
     expect(@foods.length).to eq(0)
     @foods << 'Sushi'
